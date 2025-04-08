@@ -280,6 +280,11 @@ export function getPlayerRank(
         customRankColor ?? "§6"
       }]`;
     }
+    if (out.priority === PlayerRanks.MVP_PLUS) {
+      out.prefix = `§6[MVP${customPlusColor ?? "§c"}+${
+        customRankColor ?? "§6"
+      }]`;
+    }
   }
   return out;
 }
