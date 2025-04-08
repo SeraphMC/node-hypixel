@@ -15,7 +15,7 @@ export enum PlayerRanks {
   YOUTUBER = 60,
   JR_HELPER = 70,
   HELPER = 80,
-  MODERATOR = 90,
+  GAME_MASTER = 90,
   ADMIN = 100,
 }
 
@@ -215,13 +215,13 @@ export function getPlayerRank(
         staff: true,
       };
       break;
-    case PlayerRanks.MODERATOR:
+    case PlayerRanks.GAME_MASTER:
       out = {
         priority: foundRank,
-        name: "MODERATOR",
-        cleanName: "MODERATOR",
-        prefix: "§2[MOD]",
-        cleanPrefix: "[MOD]",
+        name: "GAME_MASTER",
+        cleanName: "GAME MASTER",
+        prefix: "§2[GM]",
+        cleanPrefix: "[GM]",
         colorCode: MinecraftFormatting.DARK_GREEN,
         colorHex: MinecraftColorAsHex[MinecraftFormatting.DARK_GREEN],
         staff: true,

@@ -42,8 +42,8 @@ describe("Test PlayerRank helper", function () {
     expect(rank.name).to.be.a("string").that.equals("ADMIN");
   });
   it("should return mod", function () {
-    const rank = getPlayerRank({ rank: "MODERATOR" } as never, false);
-    expect(rank.name).to.be.a("string").that.equals("MODERATOR");
+    const rank = getPlayerRank({ rank: "GAME_MASTER" } as never, false);
+    expect(rank.name).to.be.a("string").that.equals("GAME_MASTER");
   });
   it("should return helper", function () {
     const rank = getPlayerRank({ rank: "HELPER" } as never, false);
